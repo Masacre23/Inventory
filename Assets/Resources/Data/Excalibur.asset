@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88363e4708fee584f804d492a80107e4, type: 3}
+  m_Name: Excalibur
+  m_EditorClassIdentifier: 
+  weapon:
+    id: excalibur
+    name: Excalibur
+    weight: 20
+    price: 5000
+    deterioration: 0
+    deteriorationRate: 0
+    dps: 100
+    type: 0
+    hideDeteriorationRate: 0

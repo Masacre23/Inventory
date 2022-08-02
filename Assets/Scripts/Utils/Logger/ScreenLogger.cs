@@ -6,6 +6,7 @@ namespace Utils.Logger {
     public class ScreenLogger : MonoBehaviour {
         string myLog;
         Queue myLogQueue = new Queue();
+        int maxQueue = 20;
 
         void OnEnable() {
             Application.logMessageReceived += HandleLog;
@@ -23,6 +24,9 @@ namespace Utils.Logger {
                 newString = "\n" + stackTrace;
                 myLogQueue.Enqueue(newString);
             }
+            if(myLogQueue.Count > maxQueue)
+                myLogQueue.Dequeue();
+
             myLog = string.Empty;
             foreach (string mylog in myLogQueue) {
                 myLog += mylog;
